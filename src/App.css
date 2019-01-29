@@ -1,32 +1,62 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  padding-top: 75px;
+  background-color: #afd4c0;
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dash {
+  width: 50vw;
+  background-color: #e5f4ec;
+  min-height: 100vh;
+}
+.dashboard {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-header {
+  font-size: 45px;
+  font-weight: normal;
+  color: #3b5249;
+  margin: 20px;
+}
+
+.dash_header_button {
+  margin: 20px;
+  background-color: #8aea92;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dash_container {
+  border-top: 1px solid black;
+  margin: 0 20px 10px 20px;
+}
+
+.dash_conatiner_heading {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.house {
+  width: 100%;
+  height: 150px;
+  background-color: #dedede;
+  margin: 20px 0;
+  position: relative;
+}
+
+.house_details {
+  height: 100%;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
