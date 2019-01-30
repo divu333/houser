@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import House from "../House/House";
+import axios from "axios";
+import App from "../../App.css";
+import { Link } from "react-router-dom";
 
 class Dashbaord extends Component {
-  state = {};
   render() {
     return (
-      <div>
-        Dashboard
-        <House />
+      <div className="dash">
+        <div className="dashboard">
+          <h2 className="dashboard-header">Dashboard</h2>
+          <Link to="/wizard">
+            <button className="dash_header_button"> Add New Property</button>
+          </Link>
+        </div>
       </div>
     );
   }
 }
-
 export default Dashbaord;

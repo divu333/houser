@@ -13,6 +13,8 @@ massive(process.env.CONNECTION_STRING)
   })
   .catch(err => console.log(err));
 
+app.get("/api/houses", controller.getAll);
+
 const port = 4000;
 
 app.listen(port, () => {

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import App from "../../App.css";
 
 class Wizard extends Component {
   state = {};
   render() {
-    return <div>Wizard</div>;
+    return <div className="wizard-content" />;
   }
 }
 
