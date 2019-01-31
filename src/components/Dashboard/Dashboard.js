@@ -14,6 +14,9 @@ class Dashbaord extends Component {
             <button className="dash_header_button"> Add New Property</button>
           </Link>
         </div>
+        <div className="dash_prop_container">
+          <h3 className="dash_conatiner_heading"> Home Listing</h3>
+        </div>
       </div>
     );
   }
