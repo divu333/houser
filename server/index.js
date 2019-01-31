@@ -1,15 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const controller = require("./controller");
 const massive = require("massive");
 require("dotenv").config();
+const controller = require("../server/controller");
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(__dirname + "/../public/build"));
 massive(process.env.CONNECTION_STRING)
-  .then(db => {
-    app.set("db", db);
+  .then(dbInstance => {
+    app.set("db", dbInstance);
   })
   .catch(err => console.log(err));
 

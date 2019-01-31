@@ -3,8 +3,8 @@ module.exports = {
     const dbInstance = req.app.get("db");
 
     dbInstance
-      .get_houses()
-      .then(houses => res.status(200).send(houses))
+      .get_house()
+      .then(products => res.status(200).send(products))
       .catch(err => {
         res.status(500).send({
           errorMessage:
