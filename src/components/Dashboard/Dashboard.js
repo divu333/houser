@@ -35,9 +35,7 @@ class Dashbaord extends Component {
         </div>
         <div className="dash_prop_container">
           <h3 className="dash_conatiner_heading"> Home Listing</h3>
-        </div>
 
-        <div>
           {this.state.houseList.map(val => {
             return (
               <House
@@ -52,6 +50,7 @@ class Dashbaord extends Component {
             );
           })}
         </div>
+        <div />
       </div>
     );
   }

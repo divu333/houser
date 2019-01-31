@@ -4,7 +4,7 @@ import logo from "../Header/houser_logo.png";
 const Header = () => {
   return (
     <div className="header-content">
-      <img src={logo} alt="logo" s />
+      <img src={logo} alt="logo" />
       <h1>Houser</h1>
     </div>
   );

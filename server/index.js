@@ -13,6 +13,7 @@ massive(process.env.CONNECTION_STRING)
   .catch(err => console.log(err));
 
 app.get("/api/houses", controller.getAll);
+app.post("/api/houses", controller.create);
 
 const port = 4000;
 
