@@ -1,0 +1,96 @@
+.wizard-content {
+  width: 50vw;
+  background-color: #e5f4ec;
+  position: relative;
+}
+
+.wizard-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wizard-heading {
+  font-size: 30px;
+  margin: 20px;
+  font-weight: 700;
+}
+
+.wizard-header-button {
+  margin: 20px;
+  border: none;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #fec2c2;
+}
+
+.wizard-input-container {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.wizard-input-property {
+  margin: 10px;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wizard-input-property * {
+  margin: 2px;
+}
+
+.wizard-input-property p {
+  margin-left: 12px;
+}
+
+.wizard-input-property input {
+  border: 1px solid #519872;
+  border-radius: 2px;
+  height: 25px;
+  display: inline-block;
+  text-align: start;
+}
+.wizard-input-property input:focus {
+  outline: none;
+}
+
+.wizard_button {
+  margin: 20px;
+  background-color: #3b5249;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+}
+
+.wizard-img {
+  margin: 10px;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wizard-img p {
+  margin-left: 12px;
+}
+
+.wizard-img * {
+  margin: 2px;
+}
+
+.wizard-img input {
+  border: 1px solid #519872;
+  border-radius: 2px;
+  height: 25px;
+}
+
+.wizard-previous {
+  left: 30px;
+  background-color: #3b5249;
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}

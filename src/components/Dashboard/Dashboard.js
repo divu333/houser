@@ -37,7 +37,7 @@ class Dashbaord extends Component {
       <div className="dash">
         <div className="dashboard">
           <h2 className="dashboard-header">Dashboard</h2>
-          <Link to="/wizard">
+          <Link to="/wizard/step1">
             <button className="dash_header_button"> Add New Property</button>
           </Link>
         </div>
