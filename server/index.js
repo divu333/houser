@@ -14,6 +14,7 @@ massive(process.env.CONNECTION_STRING)
 
 app.get("/api/houses", controller.getAll);
 app.post("/api/houses", controller.create);
+app.delete("/api/houses/:id", controller.delete);
 
 const port = 4000;
 

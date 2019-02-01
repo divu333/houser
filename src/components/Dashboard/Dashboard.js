@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import House from "../House/House";
 import axios from "axios";
-import App from "../../App.css";
 import { Link } from "react-router-dom";
 
 class Dashbaord extends Component {
@@ -11,6 +10,7 @@ class Dashbaord extends Component {
       houseList: []
     };
     this.getHouseList = this.getHouseList.bind(this);
+    this.deleteHouse = this.deleteHouse.bind(this);
   }
 
   getHouseList() {
@@ -22,6 +22,14 @@ class Dashbaord extends Component {
 
   componentDidMount() {
     this.getHouseList();
+  }
+
+  deleteHouse(id) {
+    console.log("button works");
+    let promise = axios.delete(`/api/houses/${id}`);
+    promise.then(() => {
+      this.getHouseList();
+    });
   }
 
   render() {
@@ -46,6 +54,7 @@ class Dashbaord extends Component {
                 city={val.city}
                 propertystate={val.state}
                 zipcode={val.zip}
+                deleteHouse={this.deleteHouse}
               />
             );
           })}

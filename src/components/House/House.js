@@ -1,6 +1,5 @@
 import React from "react";
 import "../House/house.css";
-import App from "../../App.css";
 import delete_button from "../House/delete_button.png";
 
 export default function House(props) {
@@ -14,7 +13,12 @@ export default function House(props) {
           <p>State: {props.propertystate}</p>
           <p>Zip: {props.zipcode}</p>
         </div>
-        <img src={delete_button} alt="delele" className="house_delele_button" />
+        <img
+          src={delete_button}
+          alt="delele"
+          className="house_delele_button"
+          onClick={() => props.deleteHouse(props.id)}
+        />
       </div>
     </div>
   );
