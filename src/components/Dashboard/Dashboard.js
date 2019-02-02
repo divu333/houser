@@ -57,6 +57,8 @@ class Dashbaord extends Component {
                 propertystate={val.propertystate}
                 zip={val.zip}
                 img={val.img}
+                mortgage={val.mortgage}
+                rent={val.rent}
                 deleteHouse={this.deleteHouse}
               />
             );

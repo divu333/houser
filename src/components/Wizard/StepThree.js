@@ -12,7 +12,8 @@ class StepThree extends Component {
       address: "",
       city: "",
       propertystate: "",
-      zip: ""
+      zip: "",
+      rent: ""
     };
   }
 
@@ -40,10 +41,11 @@ class StepThree extends Component {
 
   render() {
     const { updateMortgage, updateRent } = this.props;
+    let rent = this.props.mortgage * 1.25;
     return (
       <div>
         <div className="wizard-input-container">
-          <div className="wizard-recommended">Recommended Rent : $0</div>
+          <div className="wizard-recommended">Recommended Rent : ${rent}</div>
           <div className="wizard-input">
             <p>Monthly Mortgage Amount </p>
             <input
@@ -52,6 +54,7 @@ class StepThree extends Component {
               onChange={e => updateMortgage(e.target.value)}
             />
           </div>
+
           <div className="wizard-input">
             <p>Desired Monthly Rent</p>
             <input
