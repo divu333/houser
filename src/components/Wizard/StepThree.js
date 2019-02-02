@@ -42,6 +42,7 @@ class StepThree extends Component {
   render() {
     const { updateMortgage, updateRent } = this.props;
     let rent = this.props.mortgage * 1.25;
+    rent = rent ? rent : 0;
     return (
       <div>
         <div className="wizard-input-container">
