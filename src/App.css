@@ -59,3 +59,10 @@ html {
 .dash_conatiner_heading h3 {
   display: block;
 }
+
+.wizard-input {
+  margin: 10px;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -1,5 +1,5 @@
 INSERT INTO houses (
-name,address,city,state,zip
+name,address,city,propertystate,zip,img,mortgage,rent
 )
 
 VALUES(
@@ -7,5 +7,8 @@ VALUES(
     $2,
     $3,
     $4,
-    $5
+    $5,
+    $6,
+    $7,
+    $8
 )

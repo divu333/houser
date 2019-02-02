@@ -15,10 +15,28 @@ module.exports = {
 
   create: (req, res, next) => {
     const dbInstance = req.app.get("db");
-    const { name, address, city, state, zip } = req.body;
+    const {
+      name,
+      address,
+      city,
+      propertystate,
+      zip,
+      img,
+      mortgage,
+      rent
+    } = req.body;
 
     dbInstance
-      .create_house([name, address, city, state, zip])
+      .create_house([
+        name,
+        address,
+        city,
+        propertystate,
+        zip,
+        img,
+        mortgage,
+        rent
+      ])
       .then(() => res.sendStatus(200))
       .catch(err => {
         res.status(500).send({

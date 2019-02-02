@@ -52,8 +52,8 @@ class Dashbaord extends Component {
                 name={val.name}
                 address={val.address}
                 city={val.city}
-                propertystate={val.state}
-                zipcode={val.zip}
+                propertystate={val.propertystate}
+                zip={val.zip}
                 deleteHouse={this.deleteHouse}
               />
             );

@@ -94,3 +94,27 @@
   bottom: 60px;
   left: 30px;
 }
+
+.wizard-input-container {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.wizard-recommended {
+  text-align: center;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.wizard-input input {
+  border: 1px solid #519872;
+  border-radius: 2px;
+  height: 25px;
+}
+
+.wizard-input * {
+  margin: 2px;
+}
+/* .wizard-input p {
+  margin-left: 12px;
+} */
