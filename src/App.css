@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1;
+  display: block;
 }
 
 html {
@@ -25,13 +26,11 @@ html {
 .dash {
   width: 50vw;
   background-color: #e5f4ec;
-  min-height: 100vh;
+  /* height: 100%; */
 }
 .dashboard {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  margin: 0 20px 10px 20px;
 }
 
 .dashboard-header {
@@ -65,4 +64,9 @@ html {
   float: left;
   font-size: 18px;
   font-weight: 700;
+}
+
+.dash_prop_container {
+  border-top: 1px solid black;
+  margin: 0 20px 10px;
 }

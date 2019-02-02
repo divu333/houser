@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import House from "../House/House";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 class Dashbaord extends Component {
   constructor() {
@@ -41,6 +42,7 @@ class Dashbaord extends Component {
             <button className="dash_header_button"> Add New Property</button>
           </Link>
         </div>
+
         <div className="dash_prop_container">
           <h3 className="dash_conatiner_heading"> Home Listing</h3>
 
@@ -54,12 +56,12 @@ class Dashbaord extends Component {
                 city={val.city}
                 propertystate={val.propertystate}
                 zip={val.zip}
+                img={val.img}
                 deleteHouse={this.deleteHouse}
               />
             );
           })}
         </div>
-        <div />
       </div>
     );
   }
